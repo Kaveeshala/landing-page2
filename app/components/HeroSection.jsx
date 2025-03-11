@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Carousel, CarouselContent, CarouselItem } from "@/components/ui/carousel";
 import Image from "next/image";
+import "@fontsource/roboto/400.css"
 
 const images = [
     "/images/Hero_Image_Carousel.png",
@@ -10,19 +11,19 @@ const images = [
 
 export default function HeroSection() {
   return (
-    <div className="flex  flex-col items-center justify-center text-center px-6 mt-16">
-      <h1 className="text-5xl font-bold tracking-wide">Power Your World,</h1>
-      <h1 className="text-5xl font-bold tracking-wide">Protect Our Planet</h1>
+    <div className="flex  flex-col items-center justify-center text-center mt-30">
+      <h1 className="text-7xl  tracking-wider">Power Your World,</h1>
+      <h1 className="text-7xl  tracking-wider">Protect Our Planet</h1>
 
      
-      <p className="max-w-lg text-lg leading-relaxed text-gray-400 mt-4">
+      <p className="max-w-lg text-base font-roboto leading-tight text-gray-400 mt-4">
         Sunova specializes in innovative solar solutions,  
         providing efficient and sustainable energy for homes  
         and businesses, making clean power more accessible  
         and reliable.
       </p>
 
-      <Button className="bg-black text-white px-5 py-5 rounded-full mt-4">
+      <Button className="bg-black text-white px-5 py-5 rounded-full mt-6">
         CHECK IT NOW
       </Button>
 
