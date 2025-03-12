@@ -1,7 +1,7 @@
 export default function About() {
     return (
       <div className="mx-auto max-w-7xl mt-24">
-      {/* Keep h1 and paragraph in the same row */}
+  
         <div className="flex gap-36">
           <h1 className="font-semibold text-lg">About</h1>
           <div>
