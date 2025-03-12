@@ -5,7 +5,7 @@ export default function FaQSection() {
   return (
     <div className="max-w-7xl mx-auto mt-28 px-4">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-start">
-        {/* Left Column */}
+   
         <div className="space-y-6">
           <div className="flex flex-cols gap-2">
             <h1 className="text-2xl font-bold">FAQ</h1>
@@ -16,8 +16,7 @@ export default function FaQSection() {
           <p className="text-gray-400">Just click the button below.</p>
           <Button className="bg-black text-white rounded-full mt-4">CONTACT US</Button>
         </div>
-
-        {/* Right Column - FAQ Accordion */}
+        
         <div>
           <Accordion type="single" collapsible className="space-y-4">
             <AccordionItem value="q1">
