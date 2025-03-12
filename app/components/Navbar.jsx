@@ -34,7 +34,6 @@ export default function Navbar() {
 
   return (
     <div className="relative max-w-7xl mx-auto flex items-center justify-between py-4">
-      {/* First Nav Links */}
       <div className="flex gap-2">
         {firstnavLinks.map((link, index) => (
           <Button
@@ -47,12 +46,10 @@ export default function Navbar() {
         ))}
       </div>
 
-      {/* Centered Logo */}
       <h1 className="absolute left-1/2 transform -translate-x-1/2 text-4xl">
         SUNOVA
       </h1>
 
-      {/* Second Nav Links */}
       <div className="flex gap-4">
         {secondnavLinks.map((link, index) => (
           <Button
