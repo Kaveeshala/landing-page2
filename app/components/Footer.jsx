@@ -26,7 +26,7 @@ export default function Footer() {
           width={1920}
           height={1050}
         />
-        {/* Dark overlay */}
+        {/* Dark the image */}
         <div className="absolute inset-0 bg-black opacity-40"></div>
 
         <div className="absolute inset-0 flex flex-col items-center text-white mt-12">
