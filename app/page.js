@@ -5,6 +5,9 @@ import Services from "./components/Services";
 import FeatureSection from "./components/FeatureSection";
 import TableSection from "./components/TableSection";
 import HomeFilterSection from "./components/HomeFilterSection";
+import FaQSection from "./components/FaQSection";
+
+
 
 export default function Home() {
   return (
@@ -20,7 +23,9 @@ export default function Home() {
       <TableSection />
 
       <HomeFilterSection />
-      
+
+      <FaQSection />
+
     </div>
   );
 }

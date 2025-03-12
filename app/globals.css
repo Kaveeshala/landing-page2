@@ -125,3 +125,25 @@
   }
 }
 
+/* In globals.css or styles.css */
+@layer components {
+  .accordion-trigger-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25rem;
+    cursor: pointer;
+  }
+
+  .accordion-trigger-icon.closed::after {
+    content: "+";
+    font-size: 1.5rem;
+  }
+
+  .accordion-trigger-icon.opened::after {
+    content: "-";
+    font-size: 1.5rem;
+  }
+}
+
+

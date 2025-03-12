@@ -17,7 +17,7 @@ export default function Footer() {
   ];
 
   return (
-    <footer className="relative">
+    <footer className="relative mt-28">
       <div className="w-full h-[350px] overflow-hidden relative">
         <Image
           src={footer}
