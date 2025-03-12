@@ -4,10 +4,10 @@ import Container from "../../public/images/Container.png";
 
 export default function FeatureSection() {
   return (
-    <div className="space-y-12">
+    <div className="">
 
       <FeatureCard 
-        title="Designing Solar Panel for Home"
+        title="Designing solar panel for home"
         subtitle="Michael’s Home"
         description="Our Home Solar Panels provide clean, renewable energy, reducing electricity costs while promoting sustainability. Designed for maximum efficiency and durability, our panels harness the power of the sun to power your home reliably."
         image={michelhome}
@@ -15,7 +15,7 @@ export default function FeatureSection() {
       />
 
       <FeatureCard 
-        title="Designing Solar Panel for Industry"
+        title="Designing solar panel for Industry"
         subtitle="George & Co. Solar Field"
         description="Our Industrial Solar Solutions deliver reliable, high-efficiency energy to power large-scale operations sustainably. Designed for maximum output and durability, our solar systems help industries reduce energy costs, lower carbon footprints, and achieve long-term energy independence."
         image={Container}

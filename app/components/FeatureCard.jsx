@@ -1,5 +1,6 @@
-import { Card, CardContent, CardHeader } from "@/components/ui/card";
+import { Card, CardContent } from "@/components/ui/card";
 import Image from "next/image";
+import { Separator } from "@/components/ui/separator";
 
 export default function FeatureCard({ 
   title, 
@@ -9,41 +10,33 @@ export default function FeatureCard({
   variant = "imageRight" 
 }) {
   return (
-    <Card className="max-w-7xl mx-auto p-8 shadow-none border-none">
+    <Card className="max-w-7xl mx-auto shadow-none border-none mt-22 overflow-hidden">
       <CardContent>
-        <div className={`flex items-center ${variant === "imageRight" ? "flex-row" : "flex-row-reverse"} gap-6`}>
+       
+        <div className="w-1/3 flex items-center">
+          {variant === "imageRight" && <Separator className="h-[2px] w-[40px] bg-black" />}
+          <h2 className="text-6xl whitespace-nowrap tracking-wide">{title}</h2>
+          {variant === "imageLeft" && <Separator className="h-[2px] w-[40px] bg-black" />}
+        </div>
+
+        <div className={`flex ${variant === "imageRight" ? "flex-row" : "flex-row-reverse"} items-start mt-20 gap-6`}>
           
-          <div className="flex-1">
-           
-            <div className={`flex items-center ${variant === "imageRight" ? "gap-4" : "flex-row-reverse gap-4"}`}>
-              {variant === "imageRight" ? (
-                <>
-                  <div className="w-12 h-1 bg-gray-400"></div> {/* Separator */}
-                  <h2 className="text-2xl font-semibold">{title}</h2>
-                </>
-              ) : (
-                <>
-                  <h2 className="text-2xl font-semibold">{title}</h2>
-                  <div className="w-12 h-1 bg-gray-400"></div> {/* Separator */}
-                </>
-              )}
+          <div className="w-1/3 flex flex-col">
+            <h3 className="text-xl font-medium">{subtitle}</h3>
+            <p className="mt-6 text-gray-400 text-sm leading-tight">{description}</p>
+            <p className="mt-4 cursor-pointer underline">LEARN MORE</p>
+            
+            <div className="flex gap-87 text-xs mt-40">
+              <span>2024</span> <span>2024</span>
             </div>
-
-            <h3 className="mt-4 text-lg font-medium">{subtitle}</h3>
-
-            <p className="mt-2 text-gray-600 leading-relaxed">{description}</p>
-
-            <p className="mt-4  font-semibold cursor-pointer">LEARN MORE</p>
-
-            <div className="mt-4 text-gray-500 text-sm">2024 2024</div>
           </div>
 
-          <div className="flex-1 relative">
+          <div className="w-2/3 relative">
             <Image src={image} alt={title} className="w-full object-cover shadow-md" />
-            <div className="absolute bottom-0 left-0 text-gray-500 text-sm">2024 2024</div>
           </div>
 
         </div>
+
       </CardContent>
     </Card>
   );
