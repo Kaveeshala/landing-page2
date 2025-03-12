@@ -68,7 +68,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <hr className="mt-12 border-gray-300" />
+        <hr className="mt-20 border-black" />
 
         <div className="flex justify-between mt-6">
           <p>Since 2022</p>
