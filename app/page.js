@@ -4,6 +4,7 @@ import About from "./components/About";
 import Services from "./components/Services";
 import FeatureSection from "./components/FeatureSection";
 import TableSection from "./components/TableSection";
+import HomeFilterSection from "./components/HomeFilterSection";
 
 export default function Home() {
   return (
@@ -17,6 +18,8 @@ export default function Home() {
       <FeatureSection />
 
       <TableSection />
+
+      <HomeFilterSection />
       
     </div>
   );
