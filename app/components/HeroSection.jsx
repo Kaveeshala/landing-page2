@@ -1,6 +1,4 @@
 "use client";
-
-import * as React from "react";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
@@ -14,24 +12,23 @@ const images = [
 export default function HeroSection() {
   return (
     <div className="flex flex-col items-center justify-center text-center mt-30">
-      <h1 className="text-7xl tracking-wider">Power Your World,</h1>
-      <h1 className="text-7xl tracking-wider">Protect Our Planet</h1>
+      <h1 className="text-7xl tracking-wider font-roboto font-normal">Power Your World,</h1>
+      <h1 className="text-7xl tracking-wider font-roboto font-normal">Protect Our Planet</h1>
 
-      <p className="max-w-lg text-base font-roboto leading-tight text-gray-400 mt-4">
-        Sunova specializes in innovative solar solutions, providing efficient and sustainable energy for homes and businesses, making clean power more accessible and reliable.
+      <p className="max-w-lg text-base font-roboto leading-tight font-roboto font-light text-gray-400 mt-4">
+        Sunova specializes in innovative solar solutions, providing efficient <br /> and sustainable energy for homes and businesses, making clean <br /> power more accessible and reliable.
       </p>
 
-      <Button className="bg-black text-white px-5 py-5 rounded-full mt-6">
+      <Button className="bg-black text-white font-inter font-normal px-5 py-5 rounded-full mt-4">
         CHECK IT NOW
       </Button>
 
-      {/* Image carousel with fixed buttons */}
-      <div className="relative w-screen mt-8">
-        <Carousel className="w-full  mx-auto"> {/* Centered Carousel */}
+      <div className="relative w-screen mt-20">
+        <Carousel className="w-full mx-auto"> 
           <CarouselContent>
             {images.map((src, index) => (
               <CarouselItem key={index} className="w-full">
-                <div className="w-full h-[570px]"> {/* Set fixed height */}
+                <div className="w-full h-[570px]">
                   <Image
                     src={src}
                     alt={`Slide ${index + 1}`}
@@ -45,8 +42,8 @@ export default function HeroSection() {
             ))}
           </CarouselContent>
 
-          <CarouselPrevious className="absolute left-10 top-1/2 transform -translate-y-1/2 bg-black text-white p-4 rounded-full" />
-          <CarouselNext className="absolute right-10 top-1/2 transform -translate-y-1/2 bg-black text-white p-4 rounded-full" />
+          <CarouselPrevious className="absolute left-1 top-1/2 transform -translate-y-1/2 bg-black text-white p-4 rounded-full" />
+          <CarouselNext className="absolute right-1 top-1/2 transform -translate-y-1/2 bg-black text-white p-4 rounded-full" />
 
         </Carousel>
       </div>

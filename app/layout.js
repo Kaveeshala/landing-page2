@@ -1,5 +1,4 @@
-import { Roboto } from "next/font/google"; 
-import { Inter } from "next/font/google";
+import { Inter, Roboto } from "next/font/google"; 
 import "./globals.css";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
@@ -7,11 +6,14 @@ import Footer from "./components/Footer";
 const roboto = Roboto({
   variable: "--font-roboto",
   subsets: ["latin"],
+  weight: ["300","400"],
 });
 
 const inter = Inter ({
-  subsets: ['latin'],
-  weight: "400"
+  variable: "--font-inter",
+  subsets: ["latin"],
+  weight: ["400"],
+ 
 });
 
 
@@ -24,7 +26,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${roboto.variable} antialiased`}
+        className={`${roboto.variable} ${inter.variable} antialiased`}
       >
         <Navbar className={`${inter.className}`}/>
         {children}
