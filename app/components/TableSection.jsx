@@ -10,8 +10,8 @@ export default function TableSection() {
       </div>
 
       <div className="flex-1 border-r border-gray-300 px-6">
-        <h1 className=" text-2xl mt-6">Consultation</h1>
-        <p className=" text-sm  text-gray-400 leading-tight mt-4">Our Consultation provides expert
+        <h1 className="font-roboto text-[24px] mt-6">Consultation</h1>
+        <p className="font-roboto font-light text-[14px] text-gray-400 leading-tight mt-4">Our Consultation provides expert
            guidance on tailored solar solutions,
            helping you make informed decisions for
            a sustainable energy future</p>
@@ -22,8 +22,8 @@ export default function TableSection() {
 
      
       <div className="flex-1 border-r border-gray-300 px-6">
-        <h1 className="text-2xl mt-67">Survay</h1>
-        <p className=" text-sm  text-gray-400 leading-tight mt-4">Our Survey Process evaluates your site
+        <h1 className="font-roboto text-[24px] mt-67">Survay</h1>
+        <p className="font-roboto font-light text-[14px] text-gray-400 leading-tight mt-4">Our Survey Process evaluates your site
            and energy needs to design an optimal
            solar solution</p>
 
@@ -31,8 +31,8 @@ export default function TableSection() {
       </div>
 
       <div className="flex-1 border-r border-gray-300 px-6">
-        <h1 className="text-2xl mt-113">Execute</h1>
-        <p className=" text-sm  text-gray-400 leading-tight mt-4">Our Execution Process ensures seamless
+        <h1 className="font-roboto text-[24px] mt-113">Execute</h1>
+        <p className=" font-roboto font-light text-[14px] text-gray-400 leading-tight mt-4">Our Execution Process ensures seamless
            installation and integration of your solar
            system, delivering efficient, reliable, and
            sustainable energy solutions.</p>

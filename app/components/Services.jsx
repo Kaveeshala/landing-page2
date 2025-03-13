@@ -23,13 +23,13 @@ export default function ServiceSection() {
 
   return (
     <Card className="max-w-7xl mx-auto shadow-none border-none mt-38">
-      <CardContent className="font-roboto">
+      <CardContent>
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-4">
             <h2 className="text-[64px] font-roboto">Services</h2>
             <Separator className="h-[2px] w-[40px] bg-black" />
           </div>
-          <p className="max-w-md text-gray-400 font-light text-base leading-tight">
+          <p className="max-w-md text-gray-400 font-light font-roboto text-base leading-tight">
             Harnessing the Power of the Sun to Provide Sustainable, Efficient, and Reliable Energy Solutions.
           </p>
         </div>
@@ -45,7 +45,7 @@ export default function ServiceSection() {
                 />
               </CardHeader>
               <CardContent className="px-0">
-                <p className="font-medium text-[24px]">{image.description}</p>
+                <p className="font-roboto font-medium text-[24px]">{image.description}</p>
               </CardContent>
             </Card>
           ))}

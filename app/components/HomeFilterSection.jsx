@@ -39,13 +39,13 @@ export default function HomeFilterSection() {
       <Card className="border-none shadow-none">
         <CardHeader className="flex flex-col">
           <CardDescription className="w-full text-center">
-            <h1 className='text-5xl tracking-wider text-black mt-12'>
+            <h1 className='font-roboto text-[64px] text-black mt-12'>
               Join thousands of satisfied customers
             </h1>
           </CardDescription>
           <div className='flex gap-4 mt-16'>
             <Button
-              className="rounded-full bg-gray-200 text-black border border-transparent hover:bg-white hover:border-black transition cursor-pointer"
+              className="rounded-full  bg-gray-200 text-black border border-transparent hover:bg-white hover:border-black transition cursor-pointer"
               onMouseEnter={() => setSelectedCategory('home')}
             >
               Home
@@ -86,7 +86,7 @@ export default function HomeFilterSection() {
                       height={30}
                       className="rounded-full"
                     />
-                    <p className="text-sm">{image.name}</p>
+                    <p className="font-roboto font-medium">{image.name}</p>
                   </div>
                   <div className="text-yellow-500 flex items-center gap-1">
                     <Image
@@ -95,10 +95,10 @@ export default function HomeFilterSection() {
                       width={20}
                       height={20}
                     />
-                    <p className="text-sm">{image.num}</p>
+                    <p className="font-roboto text-sm">{image.num}</p>
                   </div>
                 </div>
-                <p className="mt-4  text-sm text-gray-400">
+                <p className=" font-roboto mt-4 leading-tight text-sm text-gray-400">
                   {image.description}
                 </p>
               </div>
