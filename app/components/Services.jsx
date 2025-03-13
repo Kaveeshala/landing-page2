@@ -34,8 +34,7 @@ export default function ServiceSection() {
           </p>
         </div>
 
-      
-        <div className="flex flex-cols gap-6 w-full mt-6"> 
+        <div className="flex flex-cols gap-6 w-full mt-2"> 
           {images.map((image, index) => (
             <Card key={index} className="w-full border-none shadow-none">
               <CardHeader className="overflow-hidden px-0 group">
