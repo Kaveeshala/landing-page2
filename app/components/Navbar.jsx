@@ -16,7 +16,6 @@ export default function Navbar({ className }) {
 
   return (
     <div className={`relative max-w-7xl mx-auto flex items-center justify-between py-4 ${className}`}>
-      {/* Left-side links */}
       <div className="flex gap-2">
         {firstnavLinks.map((link, index) => (
           <Button
@@ -29,12 +28,10 @@ export default function Navbar({ className }) {
         ))}
       </div>
 
-      {/* Centered "SUNOVA" text */}
       <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
         <h1 className="text-[37px]">SUNOVA</h1>
       </div>
 
-      {/* Right-side links */}
       <div className="flex gap-4">
         {secondnavLinks.map((link, index) => (
           <Button
