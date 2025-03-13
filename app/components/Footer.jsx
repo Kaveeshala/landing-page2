@@ -18,7 +18,7 @@ export default function Footer() {
 
   return (
     <footer className="relative mt-28">
-      <div className="w-full h-[350px] overflow-hidden relative">
+      <div className="w-full h-[620px] overflow-hidden relative">
         <Image
           src={footer}
           alt="footer"
@@ -29,15 +29,17 @@ export default function Footer() {
         {/* Dark the image */}
         <div className="absolute inset-0 bg-black opacity-40"></div>
 
-        <div className="absolute inset-0 flex flex-col items-center text-white mt-12">
-          <h1 className="text-6xl">Consult with our experts,</h1>
-          <h1 className="text-6xl">Get a free quote now!</h1>
-          <p className="max-w-lg text-base leading-tight text-center mt-4">
+        <div className="absolute inset-0 flex flex-col gap-0 items-center leading-none text-white mt-50">
+          <div className="">
+          <h1 className="text-[86px] font-roboto">Consult with our experts,</h1>
+          <h1 className="text-[86px] text-center font-roboto">Get a free quote now!</h1>
+          </div>
+          <p className="max-w-lg font-roboto font-light leading-tight text-center mt-8">
             Sunova specializes in innovative solar solutions, providing efficient <br />
             and sustainable energy for homes and businesses, making clean <br />
             power more accessible and reliable.
           </p>
-          <Button className="bg-white text-black rounded-full mt-6 hover:bg-gray-400 hover:text-black cursor-pointer">Contact US</Button>
+          <Button className="bg-white text-black rounded-full mt-6 p-0 py-5 px-6 font-inter hover:bg-gray-400 hover:text-black cursor-pointer">CONTACT US</Button>
         </div>
       </div>
 
@@ -71,8 +73,8 @@ export default function Footer() {
         <hr className="mt-20 border-black" />
 
         <div className="flex justify-between mt-6">
-          <p>Since 2022</p>
-          <p>&copy;2025 Sunova. All rights Reserved.</p>
+          <p className="font-roboto">Since 2022</p>
+          <p className="font-roboto">&copy;2025 Sunova. All rights Reserved.</p>
         </div>
       </div>
     </footer>
