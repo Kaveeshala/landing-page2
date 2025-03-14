@@ -5,8 +5,9 @@ import { Button } from "@/components/ui/button";
 
 const images = [
   "/images/Hero_Image_Carousel.png",
-  "/images/solarpanel1.jpg",
   "/images/solarpanel2.jpg",
+  "/images/solarpanel3.jpg",
+  "/images/solarpanel4.jpg",
 ];
 
 export default function HeroSection() {
