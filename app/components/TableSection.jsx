@@ -5,7 +5,7 @@ export default function TableSection() {
   return (
     <div className="flex border border-gray-300 mt-30">
      
-      <div className="flex-shrink-0 w-1/24 border-r border-gray-300">
+      <div className="flex-shrink-0 w-1/50 border-r border-gray-300">
       
       </div>
 
