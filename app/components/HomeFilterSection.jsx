@@ -8,12 +8,11 @@ import home1 from "../../public/images/home1.png";
 import home2 from "../../public/images/home2.png";
 import home3 from "../../public/images/home3.png";
 import public_space from "../../public/images/public_space.png";
-import Container from "../../public/images/Container.png";
 import industry from "../../public/images/industry.png";
 import priya from "../../public/images/priya.png";
 import xia from "../../public/images/xia.png";
 import stephanie from "../../public/images/stephanie.png"
-import vector from "../../public/images/vector.png";
+import vector from "../../public/images/Vector.png";
 
 const images = {
   home: [
