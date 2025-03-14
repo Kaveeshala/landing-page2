@@ -19,7 +19,7 @@ export default function HeroSection() {
         Sunova specializes in innovative solar solutions, providing efficient <br /> and sustainable energy for homes and businesses, making clean <br /> power more accessible and reliable.
       </p>
 
-      <Button className="bg-black text-white font-inter font-normal px-5 py-5 rounded-full mt-4">
+      <Button className="bg-black text-white font-inter font-normal px-5 py-5 rounded-full mt-4 cursor-pointer">
         CHECK IT NOW
       </Button>
 

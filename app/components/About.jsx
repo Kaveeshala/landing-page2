@@ -5,7 +5,7 @@ export default function About() {
         <div className="flex gap-36">
           <h1 className="font-roboto text-[24px] font-semibold">About</h1>
           <div>
-            <p className="leading-tight tracking-wide font-roboto font-400 text-[40px]">
+            <p className="leading-tight font-roboto font-400 text-[40px] text-justify">
               We  provide  innovative  solar  solutions  with  high-efficiency  panels  and  energy  storage, 
               making clean, reliable energy accessible for homes and businesses. Join us in creating a sustainable future.
             </p>

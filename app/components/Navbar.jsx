@@ -18,13 +18,14 @@ export default function Navbar({ className }) {
     <div className={`relative max-w-7xl mx-auto flex items-center justify-between py-4 ${className}`}>
       <div className="flex gap-2">
         {firstnavLinks.map((link, index) => (
+         <Link key={index} href={link.link} passHref>
           <Button
-            key={index}
             variant="outline"
-            className="rounded-full px-6 py-2 text-sm hover:bg-gray-300 border border-black transition-all duration-300 shadow-none"
+            className="rounded-full px-6 py-4 text-sm hover:bg-gray-300 border border-black transition-all duration-300 shadow-none cursor-pointer"
           >
-            <Link href={link.link}>{link.name}</Link>
-          </Button>
+            {link.name}
+            </Button>  
+         </Link>
         ))}
       </div>
 
@@ -34,13 +35,15 @@ export default function Navbar({ className }) {
 
       <div className="flex gap-4">
         {secondnavLinks.map((link, index) => (
+          <Link key={index} href={link.link} passHref>
           <Button
             key={index}
             variant="outline"
-            className="rounded-full px-6 py-2 text-sm hover:bg-gray-300 border border-black transition-all duration-300 shadow-none"
+            className="rounded-full px-6 py-2 text-sm hover:bg-gray-300 border border-black transition-all duration-300 shadow-none cursor-pointer"
           >
-            <Link href={link.link}>{link.name}</Link>
+            {link.name}
           </Button>
+          </Link>
         ))}
       </div>
     </div>

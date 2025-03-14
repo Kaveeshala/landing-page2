@@ -25,7 +25,7 @@ export default function FaQSection() {
             <h2 className="text-2xl font-roboto mt-44">Still have a question?</h2>
             <p className="font-roboto text-sm text-gray-400 ">don't worry, we are always here to help you. <br /> Just click the button below</p>
             <p className="text-gray-400"></p>
-           <Button className="bg-black text-white rounded-full px-5 py-5 w-34">CONTACT US</Button>
+           <Button className="bg-black text-white rounded-full px-5 py-5 w-34 cursor-pointer">CONTACT US</Button>
           </div>
         </div>
 
