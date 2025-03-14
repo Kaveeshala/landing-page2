@@ -65,19 +65,19 @@ export default function HomeFilterSection() {
           <div className="flex gap-4 mt-16 items-center">
             <Button
               className="rounded-full bg-gray-200 text-black border border-transparent hover:bg-white hover:border-black transition cursor-pointer"
-              onMouseEnter={() => setSelectedCategory('home')}
+              onClick={() => setSelectedCategory('home')}
             >
               Home
             </Button>
             <Button
               className="rounded-full bg-gray-200 text-black border border-transparent hover:bg-white hover:border-black transition cursor-pointer"
-              onMouseEnter={() => setSelectedCategory('publicSpace')}
+              onClick={() => setSelectedCategory('publicSpace')}
             >
               Public Space
             </Button>
             <Button
               className="rounded-full bg-gray-200 text-black border border-transparent hover:bg-white hover:border-black transition cursor-pointer"
-              onMouseEnter={() => setSelectedCategory('industry')}
+              onClick={() => setSelectedCategory('industry')}
             >
               Industry
             </Button>
