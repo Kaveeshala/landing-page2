@@ -55,7 +55,7 @@ export default function FeatureCard({
                 alt={title}
                 layout="fill"  
                 objectFit="cover"  
-                className="transition-transform duration-400"
+                className="transition-transform duration-500 ease-in-out"
               />
             </div>
 
