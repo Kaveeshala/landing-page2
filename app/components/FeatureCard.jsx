@@ -38,19 +38,20 @@ export default function FeatureCard({
           {variant === "imageLeft" && <Separator className="h-[2px] w-[40px] bg-black" />}
         </div>
 
-  
         <div className={`flex ${variant === "imageRight" ? "flex-row" : "flex-row-reverse"} items-start mt-20 gap-6`}>
     
-          <div className="w-1/3 flex flex-col">
+          <div className="w-1/3 flex flex-col relative">
             <h3 className="text-xl font-roboto font-medium">{subtitle}</h3>
             <p className="mt-6 text-gray-400 text-[14px] font-roboto font-light leading-tight">{description}</p>
             <p className="mt-4 font-roboto cursor-pointer underline">LEARN MORE</p>
-          </div>
 
-        
+            <div className="absolute bottom-[-220px] left-0 flex justify-between w-full">
+              <span className="text-black">2024</span>
+              <span className="text-black">2024</span>
+            </div>
+          </div>
           <div className="w-2/3 relative">
             <div className="relative overflow-hidden w-full h-[400px]">
-            
               <Image
                 src={images[imageIndex]}
                 alt={title}
