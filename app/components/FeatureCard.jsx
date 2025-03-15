@@ -31,25 +31,26 @@ export default function FeatureCard({
   return (
     <Card className="max-w-7xl mx-auto shadow-none border-none mt-22 overflow-hidden">
       <CardContent>
-    
+
         <div className="w-1/3 flex items-center gap-4">
           {variant === "imageRight" && <Separator className="h-[2px] w-[40px] bg-black" />}
           <h2 className="font-roboto text-[64px] whitespace-nowrap">{title}</h2>
           {variant === "imageLeft" && <Separator className="h-[2px] w-[40px] bg-black" />}
         </div>
 
+  
         <div className={`flex ${variant === "imageRight" ? "flex-row" : "flex-row-reverse"} items-start mt-20 gap-6`}>
-        
+    
           <div className="w-1/3 flex flex-col">
             <h3 className="text-xl font-roboto font-medium">{subtitle}</h3>
             <p className="mt-6 text-gray-400 text-[14px] font-roboto font-light leading-tight">{description}</p>
             <p className="mt-4 font-roboto cursor-pointer underline">LEARN MORE</p>
           </div>
 
-         
-          <div className="w-2/3 relative">
         
-            <div className="relative overflow-hidden w-full h-[400px]"> {/* Fixed height and width */}
+          <div className="w-2/3 relative">
+            <div className="relative overflow-hidden w-full h-[400px]">
+            
               <Image
                 src={images[imageIndex]}
                 alt={title}
