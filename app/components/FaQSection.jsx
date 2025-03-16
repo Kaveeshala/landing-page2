@@ -1,6 +1,7 @@
 "use client";
 import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from "@/components/ui/accordion";
 import { Button } from "@/components/ui/button";
+import { useState } from "react";
 
 export default function FaQSection() {
   const faqs = [
@@ -22,47 +23,53 @@ export default function FaQSection() {
     },
   ];
 
+  const [openItem, setOpenItem] = useState("faq-0"); 
+
   return (
     <div className="max-w-7xl mx-auto mt-28 px-4">
       <div className="flex flex-col lg:flex-row gap-16 items-start">
         {/* Left Section */}
-        <div className="w-full lg:w-1/3">
-          <div className="flex gap-2">
-            <h1 className="text-[64px] font-roboto">FAQ</h1>
-            <div className="w-full h-0.5 bg-gray-400 mt-12"></div>
+        <div className="w-full lg:w-1/3 flex flex-col justify-between min-h-[400px]">
+          <div>
+            <div className="flex gap-2">
+              <h1 className="text-[64px] font-roboto">FAQ</h1>
+              <div className="w-full h-0.5 bg-gray-400 mt-12"></div>
+            </div>
           </div>
-       
-          <div className="flex flex-col gap-4 mt-28" style={{ width: '266px', height: '137px'}}>
+          <div className="flex flex-col gap-3 mb-4 mt-auto" style={{ width: '266px' }}>
             <h2 className="text-2xl font-roboto">Still have a question?</h2>
             <p className="font-roboto text-sm text-gray-400">
-              And I want you to see things free to help you just click the button below.
+              Don't worry, we are always free to help you, just click the button below.
             </p>
-            <Button
-                className="bg-black text-white rounded-full cursor-pointer w-[133px] h-[43px] 
-                 border pt-[13px] pr-[21px] pb-[13px] pl-[21px] gap-[10px]"
-              >
-                CONTACT US
+            <Button className="bg-black text-white rounded-full cursor-pointer w-[133px] h-[43px] 
+              border pt-[13px] pr-[21px] pb-[13px] pl-[21px] gap-[10px]">
+              CONTACT US
             </Button>
           </div>
         </div>
 
         {/* Right Section (Accordion) */}
-        <div className="w-full lg:w-2/3" style={{ width: '787px', height: '478px'}}>
-          <Accordion type="single" collapsible className="w-full">
+        <div className="w-full lg:w-2/3">
+          <Accordion
+            type="single"
+            collapsible
+            value={openItem}
+            onValueChange={(value) => setOpenItem(value)} 
+            className="w-full"
+          >
             {faqs.map((faq, index) => (
               <AccordionItem key={index} value={`faq-${index}`} className="border-b border-t border-gray-300 last:border-b">
                 <AccordionTrigger className="group flex justify-between items-center w-full py-4 text-lg font-medium hover:no-underline focus:no-underline [&>svg]:hidden">
-                  <span className="font-roboto font-normal text-[30px]">{faq.question}</span> 
+                  <span className="font-roboto font-normal text-[30px]">{faq.question}</span>
                   <span className="text-2xl transition-all">
                     <span className="group-data-[state=open]:hidden">+</span>
                     <span className="hidden group-data-[state=open]:block">−</span>
                   </span>
                 </AccordionTrigger>
-                <AccordionContent className="text-gray-600 font-roboto font-light text-[16px] pb-4 px-2 transition-all duration-300">
+                <AccordionContent className="text-gray-600 font-roboto font-light text-[17px] pb-4 px-2 transition-all duration-300">
                   {faq.answer}
                 </AccordionContent>
               </AccordionItem>
-              
             ))}
           </Accordion>
         </div>
