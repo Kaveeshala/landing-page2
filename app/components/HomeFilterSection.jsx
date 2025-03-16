@@ -7,12 +7,16 @@ import Image from 'next/image';
 import home1 from "../../public/images/home1.png";
 import home2 from "../../public/images/home2.png";
 import home3 from "../../public/images/home3.png";
-import public_space from "../../public/images/public_space.png";
-import industry from "../../public/images/industry.png";
 import priya from "../../public/images/priya.png";
 import xia from "../../public/images/xia.png";
 import stephanie from "../../public/images/stephanie.png";
 import vector from "../../public/images/Vector.png";
+import industry1 from "../../public/images/industry1.jpg"
+import industry2 from "../../public/images/industry2.jpg";
+import industry3 from "../../public/images/industry3.jpg";
+import publicspace1 from "../../public/images/publicspace1.jpg";
+import publicspace2 from "../../public/images/publicspace2.jpg";
+import publicspace3 from "../../public/images/publicspace3.jpg";
 
 const images = {
   home: [
@@ -41,12 +45,59 @@ const images = {
       description: "Switching to Solara was the best decision—we now enjoy lower energy bills and a sustainable, reliable power source."
     }
   ],
-  publicSpace: {
-    img: public_space
-  },
-  industry: {
-    img: industry
-  }
+  publicSpace: [
+    {
+      img: publicspace1,
+      profilePic: xia,
+      name: "Xia Liaung",
+      starMark: vector,
+      num: 5,
+      description: "Switching to Solara was the best decision—we now enjoy lower energy bills and a sustainable, reliable power source!"
+    },
+    {
+      img: publicspace2,
+      profilePic: priya,
+      name: "Priya Sharma",
+      starMark: vector,
+      num: 5,
+      description: "Expert team made the transition to solar effortless, and our savings have been incredible!"
+    },
+    {
+      img: publicspace3,
+      profilePic: stephanie,
+      name: "Stephanie Georgia",
+      starMark: vector,
+      num: 5,
+      description: "Switching to Solara was the best decision—we now enjoy lower energy bills and a sustainable, reliable power source."
+    },
+  ],
+
+  industry: [
+    {
+      img: industry1,
+      profilePic: xia,
+      name: "Xia Liaung",
+      starMark: vector,
+      num: 5,
+      description: "Switching to Solara was the best decision—we now enjoy lower energy bills and a sustainable, reliable power source!"
+    },
+    {
+      img: industry2,
+      profilePic: priya,
+      name: "Priya Sharma",
+      starMark: vector,
+      num: 5,
+      description: "Expert team made the transition to solar effortless, and our savings have been incredible!"
+    },
+    {
+      img: industry3,
+      profilePic: stephanie,
+      name: "Stephanie Georgia",
+      starMark: vector,
+      num: 5,
+      description: "Switching to Solara was the best decision—we now enjoy lower energy bills and a sustainable, reliable power source."
+    },
+  ],
 };
 
 export default function HomeFilterSection() {
@@ -63,7 +114,6 @@ export default function HomeFilterSection() {
           </CardDescription>
 
           <div className="flex gap-4 mt-16 items-center">
-            {/* Home Button */}
             <Button
               className={`rounded-full text-black border border-transparent hover:bg-white hover:border-black transition cursor-pointer
                 ${selectedCategory === 'home' ? 'bg-white border-black' : 'bg-gray-200'}`}
@@ -72,7 +122,6 @@ export default function HomeFilterSection() {
               Home
             </Button>
 
-            {/* Public Space Button */}
             <Button
               className={`rounded-full text-black border border-transparent hover:bg-white hover:border-black transition cursor-pointer
                 ${selectedCategory === 'publicSpace' ? 'bg-white border-black' : 'bg-gray-200'}`}
@@ -81,7 +130,6 @@ export default function HomeFilterSection() {
               Public Space
             </Button>
 
-            {/* Industry Button */}
             <Button
               className={`rounded-full text-black border border-transparent hover:bg-white hover:border-black transition cursor-pointer
                 ${selectedCategory === 'industry' ? 'bg-white border-black' : 'bg-gray-200'}`}
