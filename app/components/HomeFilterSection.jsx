@@ -63,24 +63,33 @@ export default function HomeFilterSection() {
           </CardDescription>
 
           <div className="flex gap-4 mt-16 items-center">
+            {/* Home Button */}
             <Button
-              className="rounded-full bg-gray-200 text-black border border-transparent hover:bg-white hover:border-black transition cursor-pointer"
+              className={`rounded-full text-black border border-transparent hover:bg-white hover:border-black transition cursor-pointer
+                ${selectedCategory === 'home' ? 'bg-white border-black' : 'bg-gray-200'}`}
               onClick={() => setSelectedCategory('home')}
             >
               Home
             </Button>
+
+            {/* Public Space Button */}
             <Button
-              className="rounded-full bg-gray-200 text-black border border-transparent hover:bg-white hover:border-black transition cursor-pointer"
+              className={`rounded-full text-black border border-transparent hover:bg-white hover:border-black transition cursor-pointer
+                ${selectedCategory === 'publicSpace' ? 'bg-white border-black' : 'bg-gray-200'}`}
               onClick={() => setSelectedCategory('publicSpace')}
             >
               Public Space
             </Button>
+
+            {/* Industry Button */}
             <Button
-              className="rounded-full bg-gray-200 text-black border border-transparent hover:bg-white hover:border-black transition cursor-pointer"
+              className={`rounded-full text-black border border-transparent hover:bg-white hover:border-black transition cursor-pointer
+                ${selectedCategory === 'industry' ? 'bg-white border-black' : 'bg-gray-200'}`}
               onClick={() => setSelectedCategory('industry')}
             >
               Industry
             </Button>
+
             <p className="ml-auto text-sm underline cursor-pointer">SEE MORE</p>
           </div>
         </CardHeader>
