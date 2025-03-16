@@ -1,15 +1,8 @@
 "use client";
-import { useState } from "react";
 import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from "@/components/ui/accordion";
 import { Button } from "@/components/ui/button";
 
 export default function FaQSection() {
-  const [expandedItem, setExpandedItem] = useState(null);
-
-  const handleToggle = (value) => {
-    setExpandedItem((prev) => (prev === value ? null : value));
-  };
-
   const faqs = [
     {
       question: "Are there any government incentives for solar panels?",
@@ -30,41 +23,46 @@ export default function FaQSection() {
   ];
 
   return (
-    <div className="max-w-7xl mx-auto mt-28">
-      <div className="flex flex-cols gap-50 items-start">
-        <div>
-          <div className="flex flex-cols gap-2">
+    <div className="max-w-7xl mx-auto mt-28 px-4">
+      <div className="flex flex-col lg:flex-row gap-16 items-start">
+        {/* Left Section */}
+        <div className="w-full lg:w-1/3">
+          <div className="flex gap-2">
             <h1 className="text-[64px] font-roboto">FAQ</h1>
-            <div className="w-50 h-0.5 bg-gray-400 mt-12"></div>
+            <div className="w-full h-0.5 bg-gray-400 mt-12"></div>
           </div>
        
-          <div className="flex flex-col gap-4">
-            <h2 className="text-2xl font-roboto mt-44">Still have a question?</h2>
-            <p className="font-roboto text-sm text-gray-400 ">don't worry, we are always here to help you. <br /> Just click the button below</p>
-            <p className="text-gray-400"></p>
-           <Button className="bg-black text-white rounded-full px-5 py-5 w-34 cursor-pointer">CONTACT US</Button>
+          <div className="flex flex-col gap-4 mt-28" style={{ width: '266px', height: '137px'}}>
+            <h2 className="text-2xl font-roboto">Still have a question?</h2>
+            <p className="font-roboto text-sm text-gray-400">
+              And I want you to see things free to help you just click the button below.
+            </p>
+            <Button
+                className="bg-black text-white rounded-full cursor-pointer w-[133px] h-[43px] 
+                 border pt-[13px] pr-[21px] pb-[13px] pl-[21px] gap-[10px]"
+              >
+                CONTACT US
+            </Button>
           </div>
         </div>
-        
-        <div className="flex justify-end w-full">
+
+        {/* Right Section (Accordion) */}
+        <div className="w-full lg:w-2/3" style={{ width: '787px', height: '478px'}}>
           <Accordion type="single" collapsible className="w-full">
             {faqs.map((faq, index) => (
-              <AccordionItem key={index} value={`q${index + 1}`} className="border-t border-gray-300">
-                <AccordionTrigger
-                  className="text-lg font-medium group no-underline hover:no-underline focus:no-underline appearance-none [&>svg]:hidden"
-                  onClick={() => handleToggle(`q${index + 1}`)}
-                >
-                  <span className="flex font-roboto font-normal text-[30px] items-center justify-between mt-4 mb-4 w-full text-right">
-                    {faq.question}
-                    <span className="text-2xl">
-                      {expandedItem === `q${index + 1}` ? "-" : "+"}
-                    </span>
+              <AccordionItem key={index} value={`faq-${index}`} className="border-b border-t border-gray-300 last:border-b">
+                <AccordionTrigger className="group flex justify-between items-center w-full py-4 text-lg font-medium hover:no-underline focus:no-underline [&>svg]:hidden">
+                  <span className="font-roboto font-normal text-[30px]">{faq.question}</span> 
+                  <span className="text-2xl transition-all">
+                    <span className="group-data-[state=open]:hidden">+</span>
+                    <span className="hidden group-data-[state=open]:block">−</span>
                   </span>
                 </AccordionTrigger>
-                <AccordionContent className="text-justify text-gray-400 font-roboto font-light text-[16px]">
+                <AccordionContent className="text-gray-600 font-roboto font-light text-[16px] pb-4 px-2 transition-all duration-300">
                   {faq.answer}
                 </AccordionContent>
               </AccordionItem>
+              
             ))}
           </Accordion>
         </div>
