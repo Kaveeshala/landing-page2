@@ -29,7 +29,7 @@ export default function FeatureCard({
   };
 
   return (
-    <Card className="max-w-7xl mx-auto shadow-none border-none mt-22 overflow-hidden">
+    <Card className="max-w-7xl mx-auto shadow-none border-none mt-22 overflow-hidden bg">
       <CardContent>
 
         <div className="w-1/3 flex items-center gap-4">

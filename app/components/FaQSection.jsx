@@ -26,8 +26,8 @@ export default function FaQSection() {
   const [openItem, setOpenItem] = useState("faq-0"); 
 
   return (
-    <div className="max-w-7xl mx-auto mt-28 px-4">
-      <div className="flex flex-col lg:flex-row gap-16 items-start">
+    <div className="max-w-7xl mx-auto mt-28 px-4 bg-amber-500">
+      <div className="flex flex-col lg:flex-row gap-16 items-start ">
         {/* Left Section */}
         <div className="w-full lg:w-1/3 flex flex-col justify-between min-h-[400px]">
           <div>
@@ -36,7 +36,7 @@ export default function FaQSection() {
               <div className="w-full h-0.5 bg-gray-400 mt-12"></div>
             </div>
           </div>
-          <div className="flex flex-col gap-3 mb-4 mt-auto" style={{ width: '266px' }}>
+          <div className="flex flex-col gap-3 mt-auto" style={{ width: '266px' }}>
             <h2 className="text-2xl font-roboto">Still have a question?</h2>
             <p className="font-roboto text-sm text-gray-400">
               Don't worry, we are always free to help you, just click the button below.
@@ -66,8 +66,8 @@ export default function FaQSection() {
                     <span className="hidden group-data-[state=open]:block">−</span>
                   </span>
                 </AccordionTrigger>
-                <AccordionContent className="text-gray-600 font-roboto font-light text-[17px] pb-4 px-2 transition-all duration-300">
-                  {faq.answer}
+                <AccordionContent className="text-gray-600 font-roboto font-light text-[17px] pb-4 px-2 data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down">
+                      {faq.answer}
                 </AccordionContent>
               </AccordionItem>
             ))}

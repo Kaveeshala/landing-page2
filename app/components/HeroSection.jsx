@@ -60,14 +60,23 @@ export default function HeroSection() {
           </div>
         </div>
 
+        {/* Black Radial Gradient with Blur */}
+        <div 
+          className="absolute bottom-0 left-0 w-98 h-70" 
+          style={{
+            background: 'radial-gradient(circle at 30% 60%, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.3) 30%, rgba(0,0,0,0) 60%)',
+            filter: 'blur(9px)',
+            transform: 'scale(1.1)',
+          }}
+        ></div>
         {/* Text Above Buttons */}
-        <div className="absolute bottom-20 left-5 text-white text-[24px]">
+        <div className="absolute bottom-20 left-15 text-white text-[24px] z-10">
           <p className="font-roboto text-justify">Break Free From High</p>
           <p className="font-roboto text-justify">Electricity Bills</p>
         </div>
 
         {/* Navigation Buttons */}
-        <div className="absolute bottom-5 left-5 flex gap-4">
+        <div className="absolute bottom-5 left-15 flex gap-4 z-10">
           <Button
             onClick={prevSlide}
             disabled={currentIndex === 0}
