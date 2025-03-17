@@ -26,7 +26,7 @@ export default function FaQSection() {
   const [openItem, setOpenItem] = useState("faq-0"); 
 
   return (
-    <div className="max-w-7xl mx-auto mt-28 px-4 bg-amber-500">
+    <div className="max-w-7xl mx-auto mt-28 px-4">
       <div className="flex flex-col lg:flex-row gap-16 items-start ">
         {/* Left Section */}
         <div className="w-full lg:w-1/3 flex flex-col justify-between min-h-[400px]">

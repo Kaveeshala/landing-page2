@@ -31,32 +31,34 @@ export default function FeatureCard({
   return (
     <Card className="max-w-7xl mx-auto shadow-none border-none mt-22 overflow-hidden bg">
       <CardContent>
-
         <div className="w-1/3 flex items-center gap-4">
           {variant === "imageRight" && <Separator className="h-[2px] w-[40px] bg-black" />}
           <h2 className="font-roboto text-[64px] whitespace-nowrap">{title}</h2>
           {variant === "imageLeft" && <Separator className="h-[2px] w-[40px] bg-black" />}
         </div>
 
-        <div className={`flex ${variant === "imageRight" ? "flex-row" : "flex-row-reverse"} items-start mt-20 gap-6`}>
-    
-          <div className="w-1/3 flex flex-col relative">
+        <div className={`flex ${variant === "imageRight" ? "flex-row" : "flex-row-reverse"} items-stretch mt-20 gap-6`}>
+          {/* Left Section (Yellow Box) */}
+          <div className="w-1/3 flex flex-col justify-between relative">
             <h3 className="text-xl font-roboto font-medium">{subtitle}</h3>
             <p className="mt-6 text-gray-400 text-[14px] font-roboto font-light leading-tight">{description}</p>
             <p className="mt-4 font-roboto cursor-pointer underline">LEARN MORE</p>
 
-            <div className="absolute bottom-[-220px] left-0 flex justify-between w-full">
+            {/* Push the "2024" texts to the bottom */}
+            <div className="mt-auto flex justify-between w-full">
               <span className="text-black">2024</span>
               <span className="text-black">2024</span>
             </div>
           </div>
+
+          {/* Right Section (Image Box) */}
           <div className="w-2/3 relative">
             <div className="relative overflow-hidden w-full h-[400px]">
               <Image
                 src={images[imageIndex]}
                 alt={title}
-                layout="fill"  
-                objectFit="cover"  
+                layout="fill"
+                objectFit="cover"
                 className="transition-transform duration-500 ease-in-out"
               />
             </div>

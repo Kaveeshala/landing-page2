@@ -49,10 +49,10 @@ const images = {
     {
       img: publicspace1,
       profilePic: xia,
-      name: "Xia Liaung",
+      name: "Stephanie Georgia",
       starMark: vector,
       num: 5,
-      description: "Switching to Solara was the best decision—we now enjoy lower energy bills and a sustainable, reliable power source!"
+      description: "Expert team made the transition to solar effortless, and our savings have been incredible!"
     },
     {
       img: publicspace2,
@@ -60,15 +60,15 @@ const images = {
       name: "Priya Sharma",
       starMark: vector,
       num: 5,
-      description: "Expert team made the transition to solar effortless, and our savings have been incredible!"
+      description: "Switching to Solara was the best decision—we now enjoy lower energy bills and a sustainable, reliable power source."
     },
     {
       img: publicspace3,
       profilePic: stephanie,
-      name: "Stephanie Georgia",
+      name: "Xia Liaung",
       starMark: vector,
       num: 5,
-      description: "Switching to Solara was the best decision—we now enjoy lower energy bills and a sustainable, reliable power source."
+      description: "Switching to Solara was the best decision—we now enjoy lower energy bills and a sustainable, reliable power source!"
     },
   ],
 
@@ -76,23 +76,23 @@ const images = {
     {
       img: industry1,
       profilePic: xia,
+      name: "Stephanie Georgia",
+      starMark: vector,
+      num: 5,
+      description: "Expert team made the transition to solar effortless, and our savings have been incredible!"
+    },
+    {
+      img: industry2,
+      profilePic: priya,
       name: "Xia Liaung",
       starMark: vector,
       num: 5,
       description: "Switching to Solara was the best decision—we now enjoy lower energy bills and a sustainable, reliable power source!"
     },
     {
-      img: industry2,
-      profilePic: priya,
-      name: "Priya Sharma",
-      starMark: vector,
-      num: 5,
-      description: "Expert team made the transition to solar effortless, and our savings have been incredible!"
-    },
-    {
       img: industry3,
       profilePic: stephanie,
-      name: "Stephanie Georgia",
+      name: "Priya Sharma",
       starMark: vector,
       num: 5,
       description: "Switching to Solara was the best decision—we now enjoy lower energy bills and a sustainable, reliable power source."
