@@ -49,7 +49,7 @@ const images = {
     {
       img: publicspace1,
       profilePic: xia,
-      name: "Stephanie Georgia",
+      name: "Priya Sharma",
       starMark: vector,
       num: 5,
       description: "Expert team made the transition to solar effortless, and our savings have been incredible!"
@@ -57,7 +57,7 @@ const images = {
     {
       img: publicspace2,
       profilePic: priya,
-      name: "Priya Sharma",
+      name: "Stephanie Georgia",
       starMark: vector,
       num: 5,
       description: "Switching to Solara was the best decision—we now enjoy lower energy bills and a sustainable, reliable power source."
